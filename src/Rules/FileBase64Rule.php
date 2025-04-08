@@ -21,7 +21,7 @@ class FileBase64Rule extends Base64Rule implements DataAwareRule, ValidatorAware
 
     public function validate(string $attribute, mixed $value, Closure $fail): void
     {
-        if (is_file(parse_url($value, PHP_URL_PATH))) {
+        if (is_file(ltrim(parse_url($value, PHP_URL_PATH), '/'))) {
             return;
         }
 
