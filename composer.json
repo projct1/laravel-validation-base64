@@ -10,7 +10,7 @@
         "strings",
         "encoded"
     ],
-    "version": "1.0.2",
+    "version": "1.0.0",
     "autoload": {
         "psr-4": {
             "Projct1\\LaravelValidationBase64\\": "src/"
