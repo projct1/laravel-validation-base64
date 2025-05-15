@@ -1,0 +1,29 @@
+{
+    "name": "projct1/laravel-validation-base64",
+    "description": "Missing laravel validation rules for base64 encoded strings and files.",
+    "keywords": [
+        "base64",
+        "laravel",
+        "validation",
+        "files",
+        "images",
+        "strings",
+        "encoded"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Projct1\\LaravelValidationBase64\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "projct1",
+            "email": "kindly1987@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.4",
+        "laravel/framework": "^12.3.0"
+    }
+}
