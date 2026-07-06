@@ -10,11 +10,6 @@
         "strings",
         "encoded"
     ],
-    "autoload": {
-        "psr-4": {
-            "Projct1\\LaravelValidationBase64\\": "src/"
-        }
-    },
     "license": "MIT",
     "authors": [
         {
@@ -25,5 +20,35 @@
     "require": {
         "php": "^8.4",
         "laravel/framework": "^12.0 || ^13.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.0",
+        "orchestra/testbench": "^10.0 || ^11.0",
+        "phpunit/phpunit": "^11.5 || ^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Projct1\\LaravelValidationBase64\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Projct1\\LaravelValidationBase64\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Projct1\\LaravelValidationBase64\\LaravelValidationBase64ServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "lint": "pint --test",
+        "fix": "pint"
+    },
+    "config": {
+        "sort-packages": true
     }
 }
